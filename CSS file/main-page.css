@@ -1,0 +1,1136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-color) !important;
+}
+
+/*===============Variable===============*/
+:root {
+  --primary-color: #99e54d;
+  --secondry-color: #8ae132;
+  --third-color: #f1ae0e;
+  --white-color: #fff;
+  --bg-color: #1a1a1a;
+  --bg2-color: #f9f6ee;
+  --text-color: #000;
+  --primary-font: 'Raleway', sans-serif;
+  --secondry-font: 'Montserrat', sans-serif;
+}
+
+
+/*===============custom css===============*/
+p {
+  font-family: var(--primary-font)
+}
+
+h1 {
+  font-family: var(--secondry-font) 
+}
+
+h2 {
+  font-family: var(--secondry-font) 
+}
+
+h3 {
+  font-family: var(--secondry-font) 
+}
+
+button {
+  font-family: var(--primary-font) 
+}
+
+/*
+============================
+Main section start
+============================
+*/
+
+
+/*
+============================
+navbar start
+============================
+*/
+
+.menu-btn {
+  display: none;
+}
+
+.close-btn {
+  display: none;
+}
+
+.side-bar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg2-color);
+}
+
+.side-bar > ul {
+  list-style-type: none;
+}
+
+.side-bar > ul > li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.side-bar > ul > li > a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-family: var(--secondry-font);
+  text-transform: uppercase;
+}
+
+.side-bar > ul > li > a:hover {
+  color: #ffe6ab;
+}
+
+/*
+============================
+navbar end
+============================
+*/
+
+
+/*
+============================
+first section start
+============================
+*/
+
+.first-section {
+  width: 100%;
+  height: 837px;
+  background-image: url("../images/bg-1st.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first-sec-content {
+  width: 100%;
+  height: 660px;
+  margin-left: 10%;
+  margin-top: 7%;
+  overflow-y: hidden;
+}
+
+.discount {
+  width: 225px;
+  height: 225px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--secondry-font);
+}
+
+.discount > h2 {
+  font-size: 60px;
+}
+
+.discount > p {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.heading {
+  font-family: var(--secondry-font);
+  margin-top: 20px;
+  color: white;
+  height: 100%;
+}
+
+.heading > h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.heading > h2 {
+  font-size: 60px;
+  line-height: 4.1rem;
+  overflow-y: hidden;
+  width: 30%;
+}
+
+.heading > p {
+  margin-top: 25px;
+  font-size: 18px;
+  margin-bottom: 50px;
+  font-family: var(--primary-font);
+}
+
+.heading > p > a::after {
+  content: "Freepik";
+  text-decoration: none;
+  color: #99e54d;
+}
+
+.heading > p > a {
+  text-decoration: none;
+}
+
+.heading > p > a:hover {
+  color: var(--secondry-color);
+}
+
+.heading > .btn-readMore > button {
+  border: none;
+  background-color: var(--third-color);
+  font-size: 15px;
+  padding: 17px 35px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.09rem;
+}
+
+.heading > .btn-readMore > button:hover {
+  background-color: #ffe6ab;
+  color: #000;
+}
+
+/*
+============================
+first section end
+============================
+*/
+
+/*
+============================
+second section start
+============================
+*/
+
+.second-section {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 380px;
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-sec-img {
+  width: 32.1%;
+  height: 100%;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.second-sec-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px;
+  filter: brightness(80%);
+}
+
+.second-sec-img > p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.21rem;
+  width: 100%;
+  text-align: center;
+}
+
+
+/*
+============================
+second section end
+============================
+*/
+
+/*
+============================
+third section start
+============================
+*/
+
+.third-section {
+  color: white;
+  margin-top: 12%;
+  display: flex;
+  justify-content: space-around;
+  width: 82%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 520px;
+}
+
+.content {
+  align-self: flex-end;
+  width: 49%;
+}
+
+.content > h2 {
+  font-size: 50px;
+  font-family: var(--secondry-font);
+  margin-bottom: 15px;
+}
+
+.content > h3 {
+  font-family: var(--secondry-font);
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.content > p {
+  font-family: var(--primary-font);
+  width: 95%;
+  line-height: 2rem;
+  font-size: 18px;
+}
+
+.content > .link {
+  margin-top: 20px;
+}
+
+.content > .link > a::after {
+  content: "Freepik";
+  color: var(--third-color);
+}
+
+.content > .link > a {
+  text-decoration: none;
+}
+
+.content > .link > a:hover {
+  opacity: 0.9;
+}
+
+.third-sec-img {
+  overflow-y: hidden;
+  width: 49%;
+}
+
+.third-sec-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px;
+}
+
+
+/*
+============================
+third section end
+============================
+*/
+
+/*
+============================
+fourth section start
+============================
+*/
+
+.fourth-section {
+  width: 85%;
+  height: 380px;
+  margin-top: 12%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.fourth-sec-img {
+  width: 32.2%;
+  height: 100%;
+}
+
+.f-img1 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("../images/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 50px;
+}
+
+.f-img2 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("../images/pexels-photo-3662126.jpeg");
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 50px;
+}
+
+.f-img3 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("../images/pexels-photo-3939685.jpeg");
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 50px;
+}
+
+/*
+============================
+fourth section end
+============================
+*/
+
+/*
+============================
+fifth section start
+============================
+*/
+
+.fifth-content {
+  margin-left: 4%;
+}
+
+.fifth-section {
+  color: white;
+  margin-top: 12%;
+  display: flex;
+  justify-content: space-around;
+  width: 82%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 520px;
+}
+
+.content {
+  align-self: flex-end;
+  width: 49%;
+}
+
+.content > h2 {
+  font-size: 50px;
+  font-family: var(--secondry-font);
+  margin-bottom: 15px;
+}
+
+.content > h3 {
+  font-family: var(--secondry-font);
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.content > p {
+  font-family: var(--primary-font);
+  width: 95%;
+  line-height: 2rem;
+  font-size: 18px;
+}
+
+.content > .link {
+  margin-top: 20px;
+}
+
+.content > .link > a::after {
+  content: "Freepik";
+  color: var(--third-color);
+}
+
+.content > .link > a {
+  text-decoration: none;
+}
+
+.content > .link > a:hover {
+  opacity: 0.9;
+}
+
+.fifth-sec-img {
+  overflow-y: hidden;
+  width: 49%;
+}
+
+.fifth-sec-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px;
+}
+
+/*
+============================
+fifth section end
+============================
+*/
+
+/*
+============================
+Menu section start
+============================
+*/
+
+.menu-section {
+  color: var(--white-color);
+  margin-top: 12%;
+}
+
+.menu-section > h1 {
+  font-family: var(--secondry-font);
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.menu-section > p {
+  font-family: var(--primary-font);
+  text-align: center;
+  font-size: 18px;
+}
+
+.menu-section > p > a::after {
+  content: "Freepik";
+  color: var(--third-color);
+  font-weight: 700;
+}
+
+.menu-section > p > a {
+  text-decoration: none;
+}
+
+.menu-section > p > a:hover {
+  opacity: 0.9;
+}
+
+.first-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 83%;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.first-menu-img {
+  width: 100%;
+  min-height: 300px;
+}
+
+.first-menu-img > img {
+  width: 100%;
+  height: 480px;
+  border-radius: 50px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.first-menu-img > p {
+  font-family: var(--secondry-font);
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.first-menu-img > button {
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+  border: none;
+  font-size: 16px;
+  padding: 20px 43px;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+.first-menu-img > button:hover {
+  background-color: var(--secondry-color);
+}
+
+/*
+============================
+Menu section end
+============================
+*/
+
+/*
+============================
+salad section start
+============================
+*/
+
+.salad-img {
+  width: 46%;
+}
+
+/*
+============================
+salad section end
+============================
+*/
+
+/*
+============================
+contact section start
+============================
+*/
+
+.contact-section {
+  margin-top: 8%;
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("../images/vegetables-set-left-black-slate.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.contact-sec-content {
+  width: 100%;
+  height: 660px;
+  margin-left: 10%;
+  margin-top: 7%;
+  overflow-y: hidden;
+}
+
+.discount {
+  width: 225px;
+  height: 225px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--secondry-font);
+}
+
+.discount > h2 {
+  font-size: 60px;
+}
+
+.discount > p {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.conact  {
+  margin-top: 85px;
+  color: var(--white-color);
+}
+
+.conact > h2 {
+  font-family: var(--secondry-font);
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.conact > p {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+input[type = "text"] {
+  width: 40%;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  padding-left: 10px
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type = "submit"] {
+  background-color: var(--primary-color);
+  border: none;
+  margin-left: 20px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: var(--primary-font);
+}
+
+/*=======footer======*/
+.email-add::after { 
+  content: "hi@ourcompany.com";
+  color: var(--third-color);
+  font-family: var(--primary-font);
+}
+
+.location1::after { 
+  content: "121 Rock Street, 21 Avenue,";
+  color: var(--third-color);
+  font-family: var(--primary-font);
+}
+
+.location2::after { 
+  content: "New York, NY 92103-9000";
+  color: var(--third-color);
+  font-family: var(--primary-font);
+}
+
+.phone::after { 
+  content: "+1(555) 000-000";
+  color: var(--third-color);
+  font-family: var(--primary-font);
+}
+
+.footer-img {
+  color: white;
+  text-align: center;
+}
+
+.footer-img > .bg-c > img {
+  width: 40px;
+}
+
+.bg-c {
+  width: 70px;
+  height: 70px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-img > h3 {
+  font-family: var(--secondry-font);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-img > p {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+
+/*
+============================
+contact section end
+============================
+*/
+
+/*
+============================
+Main section end
+============================
+*/
+
+
+/*
+==================================
+||||||||||||||||||||||||||||||||||
+Main page resposive  
+||||||||||||||||||||||||||||||||||
+==================================
+*/
+
+
+@media only screen and (max-width: 991px) {
+
+  .menu-btn {
+    display: block;
+    background-color: #f9f6ee;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-btn > i {
+    font-size: 26px;
+  }
+
+  .menu-btn > i:hover {
+    color: #9e91e8;
+  }
+  
+  .close-btn {
+    display: block;
+    color: white;
+    width: 100%;
+    height: 75px;
+  }
+
+  .close-btn > i {
+  font-size: 30px;
+  color: wheat;
+  position: absolute;
+  right: 0px;
+  margin: 25px;
+  cursor: pointer;
+  display: block;
+  }
+
+  .menu-bar {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 0.3s ease;
+    transition-property: left;
+    z-index: 999;
+  }
+
+  .side-bar {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.7s ease;
+    transition-property: left;
+    display: block;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .side-bar > ul > li > a {
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: var(--primary-font);
+  }
+
+  .side-bar > ul > li > a:hover {
+    color: rgb(201, 201, 201);
+  }
+
+  .side-bar > ul > li {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .side-bar.work {
+    left: 0;
+  }
+  
+  .menu-bar.work {
+    left: 0;
+  }
+ 
+}
+
+
+/*
+==============================
+Mobile size 
+==============================
+*/
+
+@media only screen and (max-width: 456px) {
+
+/*
+============================
+first section start
+============================
+*/
+.first-section {
+  overflow: hidden;
+}
+
+.heading > h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 3.4rem;
+}
+
+.first-sec-content {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  height: 100%;
+}
+
+.first-sec-content > .discount {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading > h4 {
+  text-align: center;
+}
+
+.heading > p {
+  text-align: center;
+}
+
+  
+.heading > .btn-readMore {
+  text-align: center;
+}
+
+/*
+============================
+first section end
+============================
+*/
+
+
+/*
+============================
+second section start
+============================
+*/
+
+.second-section {
+  flex-direction: column;
+  height: 750px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14%;
+}
+
+.second-sec-img {
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+/*
+============================
+second section end
+============================
+*/
+
+/*
+============================
+third section start
+============================
+*/
+ 
+.third-section {
+  margin-top: 10%;
+  flex-direction: column;
+  height: 920px;
+}
+
+.third-section > .content {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.third-section > .content > h2 {
+  font-size: 1.5rem;
+}
+
+.third-section > .content > p {
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.third-sec-img {
+  width: 100%;
+  height: 330px;
+}
+
+/*
+============================
+third section end
+============================
+*/
+
+/*
+============================
+fourth section start
+============================
+*/
+
+.fourth-section {
+  flex-direction: column;
+  height: 1500px;
+}
+
+.fourth-sec-img {
+  width: 100%;
+  margin-bottom: 120px 
+}
+
+/*
+============================
+fourth section end
+============================
+*/
+
+/*
+============================
+fifth section start
+============================
+*/
+
+.fifth-content {
+  margin-left: 0px;
+  width: 100%;
+  text-align: center;
+  height: 50%;
+  margin-top: 60px;
+}
+
+.fifth-content > h2 {
+  font-size: 1.5rem;
+}
+
+.fifth-content > p {
+  width: 90%;
+}
+
+.fifth-section {
+  margin-top: 0px;
+  flex-direction: column;
+  height: 750px;
+  margin-bottom: 0px;
+}
+
+.fifth-sec-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 50%;
+}
+
+/*
+============================
+fifth section end
+============================
+*/
+
+/*
+============================
+Menu section start
+============================
+*/
+
+.menu-section {
+  margin-top: 0px;
+}
+
+.menu-section > h1 {
+  font-size: 1.5rem;
+}
+
+.menu-section > p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2rem;
+}
+
+.first-menu {
+  grid-template-columns: repeat(1, 1fr);
+  width: 80%;
+  margin-top: 35px;
+}
+
+.first-menu-img > img {
+  width: 90%;
+  height: 290px;
+}
+
+/*
+============================
+Menu section end
+============================
+*/
+
+/*
+============================
+contact section start
+============================
+*/
+
+.contact-sec-content {
+  text-align: center;
+  margin: 0px;
+}
+
+.discount {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+.conact > h2 {
+  font-size: 1.5rem;
+}
+
+.conact > p {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2rem;
+}
+
+input[type = "text"] {
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+input[type = "submit"] {
+  width: 80%;
+  margin-left: 0px;
+}
+
+/*=======footer======*/
+
+.footer {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.footer-img {
+  margin-bottom: 50px;
+}
+
+/*
+============================
+contact section end
+============================
+*/
+}

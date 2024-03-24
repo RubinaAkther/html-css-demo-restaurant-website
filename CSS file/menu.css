@@ -1,0 +1,1262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg2-color);
+  padding-bottom: 70px;
+}
+
+/*===============Variable===============*/
+:root {
+  --primary-color: #99e54d;
+  --secondry-color: #8ae132;
+  --third-color: #f1ae0e;
+  --white-color: #fff;
+  --bg-color: #1a1a1a;
+  --bg2-color: #f9f6ee;
+  --text-color: #000;
+  --primary-font: 'Raleway', sans-serif;
+  --secondry-font: 'Montserrat', sans-serif;
+}
+
+
+/*===============custom css===============*/
+p {
+  font-family: var(--primary-font);
+}
+
+h1 {
+  font-family: var(--secondry-font);
+}
+
+h2 {
+  font-family: var(--secondry-font);
+}
+
+h3 {
+  font-family: var(--secondry-font);
+}
+
+button {
+  font-family: var(--primary-font);
+}
+
+/*
+============================
+Main div start
+============================
+*/
+
+
+/*
+============================
+navbar start
+============================
+*/
+
+.menu-btn {
+  display: none;
+}
+
+.close-btn {
+  display: none;
+}
+
+.side-bar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg2-color);
+}
+
+.side-bar > ul {
+  list-style-type: none;
+}
+
+.side-bar > ul > li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.side-bar > ul > li > a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-family: var(--secondry-font);
+  text-transform: uppercase;
+}
+
+.side-bar > ul > li > a:hover {
+  color: #ffe6ab;
+}
+
+.side-bar > ul > li > a.active {
+  color: var(--third-color);
+}
+
+/*
+============================
+navbar end
+============================
+*/
+
+/*
+============================
+contact section start
+============================
+*/
+
+.contact {
+  width: 100%;
+  height: 420px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-content {
+  width: 85%;
+  height: 290px;
+  margin: auto;
+  background-color: var(--white-color);
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-content > h1 {
+  font-family: var(--secondry-font);
+  font-size: 48px;
+  margin-bottom: 20px;
+  width: 60%;
+}
+
+.contact-content > p {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.contact-content > a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f095";
+  color: var(--third-color);
+}
+
+.contact-content > a::after {
+  content: " +1 (234) 567-8910";
+}
+
+.contact-content > a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 700;
+  font-family: var(--secondry-font);
+  font-size: 35px;
+  letter-spacing: 0.1rem;
+}
+
+.contact-content > a:hover {
+  color: var(--primary-color);
+}
+
+/*
+============================
+contact section end
+============================
+*/
+
+/*
+============================
+Small bite section start
+============================
+*/
+
+.bite-sec {
+  margin-top: 50px;
+}
+
+.bite-sec > h1 {
+  font-size: 47px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.bite-sec > p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.bite-sec > p > a::after {
+  content: "Freepik";
+}
+
+.bite-sec > p > a {
+  text-decoration: none;
+  color: var(--third-color);
+}
+
+.bite-sec > p > a:hover {
+  color: #d29508;
+}
+
+.bite-content {
+  width: 85%;
+  height: 690px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bite-left-sec {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.bite-left-sec > img {
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px;
+}
+
+.bite-right-sec {
+  width: 50%;
+  height: 100%;
+  margin-left: 30px;
+  padding-top: 40px;
+}
+
+.bite-right-sec > h3 {
+  margin-bottom: 25px;
+}
+
+.bite-right-sec > p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/*
+============================
+Small bite section end
+============================
+*/
+
+/*
+============================
+hot dishes section start
+============================
+*/
+
+.dishes-sec {
+  margin-top: 100px;
+}
+
+.dishes-sec > h1 {
+  font-size: 47px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.dishes-sec > p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.dishes-sec > p > a::after {
+  content: "Freepik";
+}
+
+.dishes-sec > p > a {
+  text-decoration: none;
+  color: var(--third-color);
+}
+
+.dishes-sec > p > a:hover {
+  color: #d29508;
+}
+
+.dishes-content {
+  width: 85%;
+  height: 690px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.dishes-right-sec {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.dishes-right-sec > img {
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px;
+}
+
+.dishes-left-sec {
+  width: 50%;
+  height: 100%;
+  margin-left: 30px;
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+.dishes-left-sec > h3 {
+  margin-bottom: 20px;
+}
+
+.dishes-left-sec > p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  width: 90%;
+  line-height: 1.8rem;
+}
+
+/*
+============================
+hot dishes section end
+============================
+*/
+
+
+/*
+============================
+Home-f-section start
+============================
+*/
+
+.home-f-section {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 730px;
+  background-image: url("../images/sec-section-img-3.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: cover;
+  margin-top: 6%;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.first-sec-content {
+  width: 100%;
+  height: 660px;
+  margin-left: 3%;
+  margin-top: 3%;
+  overflow-y: hidden;
+}
+
+.discount {
+  width: 225px;
+  height: 225px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--secondry-font);
+}
+
+.discount > h2 {
+  font-size: 60px;
+}
+
+.discount > p {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.heading {
+  font-family: var(--secondry-font);
+  margin-top: 20px;
+  color: white;
+  height: 100%;
+}
+
+.heading > h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.heading > h2 {
+  font-size: 50px;
+  line-height: 4.1rem;
+  overflow-y: hidden;
+  margin-bottom: 40px;
+  width: 40%;
+}
+
+.heading > p {
+  margin-top: 25px;
+  font-size: 18px;
+  margin-bottom: 50px;
+  font-family: var(--primary-font);
+}
+
+.heading > p > a::after {
+  content: "Freepik";
+  text-decoration: none;
+  color: #99e54d;
+}
+
+.heading > p > a {
+  text-decoration: none;
+}
+
+.heading > p > a:hover {
+  color: var(--secondry-color);
+}
+
+.heading > a {
+  text-decoration: none;
+  background-color: var(--third-color);
+  color: white;
+  padding: 19px 46px 20px;
+  border-radius: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.heading > a:hover {
+  background-color: #ffe6ab;
+  color: #111;
+}
+
+/*
+============================
+Home-f-section end
+============================
+*/
+
+
+/*
+============================
+dessert section start
+============================
+*/
+
+.dessert-sec {
+  margin-top: 110px;
+}
+
+.dessert-sec > h1 {
+  font-size: 47px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.dessert-sec > p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.dessert-sec > p > a::after {
+  content: "Freepik";
+}
+
+.dessert-sec > p > a {
+  text-decoration: none;
+  color: var(--third-color);
+}
+
+.dessert-sec > p > a:hover {
+  color: #d29508;
+}
+
+.dessert-content {
+  width: 85%;
+  height: 690px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.dessert-left-sec {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.dessert-left-sec > img {
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px;
+}
+
+.dessert-right-sec {
+  width: 50%;
+  height: 100%;
+  margin-left: 30px;
+  padding-top: 40px;
+}
+
+.dessert-right-sec > h3 {
+  margin-bottom: 20px;
+}
+
+.dessert-right-sec > p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.8rem;
+}
+
+/*
+============================
+dessert section end
+============================
+*/
+
+/*
+============================
+tea section start
+============================
+*/
+
+.tea-sec {
+  margin-top: 110px;
+}
+
+.tea-sec > h1 {
+  font-size: 47px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tea-sec > p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.tea-sec > p > a::after {
+  content: "Freepik";
+}
+
+.tea-sec > p > a {
+  text-decoration: none;
+  color: var(--third-color);
+}
+
+.tea-sec > p > a:hover {
+  color: #d29508;
+}
+
+.tea-content {
+  width: 85%;
+  height: 690px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.tea-right-sec {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.tea-right-sec > img {
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px;
+}
+
+.tea-left-sec {
+  width: 50%;
+  height: 100%;
+  margin-left: 30px;
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+.tea-left-sec > h3 {
+  margin-bottom: 20px;
+}
+
+.tea-left-sec > p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  width: 92%;
+  line-height: 1.8rem;
+}
+
+/*
+============================
+tea section end
+============================
+*/
+
+/*
+============================
+our contact section start
+============================
+*/
+
+.our-contact-section {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 630px;
+  background-color: var(--white-color);
+  margin-top: 6%;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section {
+  width: 50%;
+  height: 100%;
+  margin-left: 3%;
+  margin-top: 10%;
+  overflow-y: hidden;
+}
+
+.left-section-discount {
+  width: 225px;
+  height: 225px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--secondry-font);
+}
+
+.left-section-discount > h2 {
+  font-size: 60px;
+}
+
+.left-section-discount > p {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.left-section-heading {
+  font-family: var(--secondry-font);
+  margin-top: 20px;
+  color: var(--text-color);
+  height: 100%;
+}
+
+.left-section-heading > h2 {
+  font-size: 60px;
+  line-height: 4.1rem;
+  overflow-y: hidden;
+  margin-bottom: 50px;
+}
+
+.left-section-heading > p {
+  margin-top: 50px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-family: var(--primary-font);
+}
+
+.left-section-heading > p > a::after {
+  content: "Freepik";
+  text-decoration: none;
+  color: #99e54d;
+}
+
+.left-section-heading > p > a {
+  text-decoration: none;
+}
+
+.left-section-heading > p > a:hover {
+  color: var(--secondry-color);
+}
+
+.left-section-heading > a {
+  text-decoration: none;
+  background-color: var(--third-color);
+  color: white;
+  padding: 19px 46px 20px;
+  border-radius: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.09rem;
+}
+
+.left-section-heading > a:hover {
+  background-color: #ffe6ab;
+  color: #111;
+}
+
+.right-section {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.email-add::after { 
+  content: "hi@ourcompany.com";
+  color: var(--third-color);
+  font-family: var(--primary-font);
+}
+
+.location1::after { 
+  content: "121 Rock Street, 21 Avenue,";
+  color: var(--text-color);
+  font-family: var(--primary-font);
+}
+
+.location2::after { 
+  content: "New York, NY 92103-9000";
+  color: var(--text-color);
+  font-family: var(--primary-font);
+}
+
+.phone::after { 
+  content: "+1(555) 000-000";
+  color: var(--third-color);
+  font-family: var(--primary-font);
+}
+
+.Right-sec-img {
+  color: var(--text-color);
+  display: flex;
+  margin-top: 40px;
+}
+
+.Right-sec-img > .bg-c > img {
+  width: 40px;
+}
+
+.bg-c {
+  width: 70px;
+  height: 70px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Right-sec-img > .right-sec-content > h3 {
+  font-family: var(--secondry-font);
+  margin-bottom: 30px;
+}
+
+.Right-sec-img > .right-sec-content >  p {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.right-sec-content {
+  margin-left: 40px;
+}
+
+/*
+============================
+our contact section end
+============================
+*/
+
+
+
+/*
+==================================
+||||||||||||||||||||||||||||||||||
+Main page resposive  
+||||||||||||||||||||||||||||||||||
+==================================
+*/
+
+
+@media only screen and (max-width: 991px) {
+
+  .menu-btn {
+    display: block;
+    background-color: #f9f6ee;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-btn > i {
+    font-size: 26px;
+  }
+
+  .menu-btn > i:hover {
+    color: #9e91e8;
+  }
+  
+  .close-btn {
+    display: block;
+    color: white;
+    width: 100%;
+    height: 75px;
+  }
+
+  .close-btn > i {
+  font-size: 30px;
+  color: wheat;
+  position: absolute;
+  right: 0px;
+  margin: 25px;
+  cursor: pointer;
+  display: block;
+  }
+
+  .menu-bar {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 0.3s ease;
+    transition-property: left;
+    z-index: 999;
+  }
+
+  .side-bar {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.7s ease;
+    transition-property: left;
+    display: block;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .side-bar > ul > li > a {
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: var(--primary-font);
+  }
+
+  .side-bar > ul > li > a:hover {
+    color: rgb(201, 201, 201);
+  }
+
+  .side-bar > ul > li > a.active {
+    color: white;
+  }
+
+  .side-bar > ul > li {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .side-bar.work {
+    left: 0;
+  }
+  
+  .menu-bar.work {
+    left: 0;
+  }
+ 
+}
+
+
+/*
+==============================
+Mobile size 
+==============================
+*/
+
+@media only screen and (max-width: 456px) {
+
+
+/*
+============================
+contact section start
+============================
+*/
+
+.contact {
+  height: 450px;
+}
+
+.contact-content {
+  width: 78%;
+  height: 300px;
+}
+
+.contact-content > h1 {
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+.contact-content > a {
+  font-size: 1.5rem;
+}
+
+/*
+============================
+contact section end
+============================
+*/
+
+/*
+============================
+Small bite section start
+============================
+*/
+
+.bite-sec {
+  margin-top: 60px;
+}
+
+.bite-sec > h1 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.bite-sec > p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bite-content {
+  width: 78%;
+  height: 1060px;
+  flex-direction: column;
+}
+
+.bite-left-sec {
+  width: 90%;
+  height: 350px;
+}
+
+.bite-left-sec > img {
+  width: 100%;
+  height: 100%;
+}
+
+.bite-right-sec {
+  width: 100%;
+  height: 1100px;
+  overflow: hidden;
+}
+
+
+/*
+============================
+Small bite section end
+============================
+*/
+
+
+/*
+============================
+hot dishes section start
+============================
+*/
+
+.dishes-sec {
+  margin-top: 60px;
+}
+
+.dishes-sec > h1 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.dishes-sec > p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dishes-content {
+  width: 78%;
+  height: 1160px;
+  flex-direction: column;
+}
+
+.dishes-right-sec {
+  width: 90%;
+  height: 350px;
+}
+
+.dishes-right-sec > img {
+  width: 100%;
+  height: 100%;
+}
+
+.dishes-left-sec {
+  width: 100%;
+  height: 800px;
+  padding: 0px;
+}
+
+/*
+============================
+hot dishes section end
+============================
+*/
+
+/*
+============================
+Home-f-section start
+============================
+*/
+
+.home-f-section {
+  background-position: 71% 50%;
+  overflow: hidden;
+  width: 80%;
+  height: 700px;
+  margin-top: 60px;
+}
+
+.first-sec-content {
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.heading > h2 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  width: 80%;
+}
+
+.heading > p {
+  margin-bottom: 25px;
+}
+
+/*
+============================
+Home-f-section end
+============================
+*/
+
+/*
+============================
+dessert section start
+============================
+*/
+
+.dessert-sec {
+  margin-top: 60px;
+}
+
+.dessert-sec > h1 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.dessert-sec > p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dessert-content {
+  width: 78%;
+  height: 1160px;
+  flex-direction: column;
+}
+
+.dessert-left-sec {
+  width: 90%;
+  height: 350px;
+}
+
+.dessert-left-sec > img {
+  width: 100%;
+  height: 100%;
+}
+
+.dessert-right-sec {
+  width: 100%;
+  height: 900px;
+}
+
+/*
+============================
+dessert section end
+============================
+*/
+
+
+/*
+============================
+tea section start
+============================
+*/
+
+.tea-sec {
+  margin-top: 60px;
+}
+
+.tea-sec > h1 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.tea-sec > p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tea-content {
+  width: 78%;
+  height: 1200px;
+  flex-direction: column;
+}
+
+.tea-right-sec {
+  width: 90%;
+  height: 350px;
+}
+
+.tea-right-sec > img {
+  width: 100%;
+  height: 100%;
+}
+
+.tea-left-sec {
+  width: 100%;
+  height: 800px;
+  padding: 0px;
+  margin-bottom: 50px;
+}
+
+/*
+============================
+tea section end
+============================
+*/
+
+/*
+============================
+our contact section start
+============================
+*/
+
+.our-contact-section {
+  width: 78%;
+  margin-top: 60px;
+  flex-direction: column;
+  height: 1350px;
+}
+
+.left-section {
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 50px;
+  height: 700px;
+}
+
+.left-section-heading > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.left-section-heading > p {
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.right-section {
+  width: 100%;
+  margin-top: 0px;
+}
+
+.Right-sec-img {
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.Right-sec-img > .bg-c > img {
+  width: 40px;
+}
+
+.bg-c {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.right-sec-content {
+  margin-left: 10px;
+}
+
+/*
+============================
+our contact section end
+============================
+*/
+
+}

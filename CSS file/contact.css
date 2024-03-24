@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg2-color);
+  padding-bottom: 70px;
+}
+
+/*===============Variable===============*/
+:root {
+  --primary-color: #99e54d;
+  --secondry-color: #8ae132;
+  --third-color: #f1ae0e;
+  --white-color: #fff;
+  --bg-color: #1a1a1a;
+  --bg2-color: #f9f6ee;
+  --text-color: #000;
+  --primary-font: 'Raleway', sans-serif;
+  --secondry-font: 'Montserrat', sans-serif;
+}
+
+
+/*===============custom css===============*/
+p {
+  font-family: var(--primary-font);
+}
+
+h1 {
+  font-family: var(--secondry-font);
+}
+
+h2 {
+  font-family: var(--secondry-font);
+}
+
+h3 {
+  font-family: var(--secondry-font);
+}
+
+button {
+  font-family: var(--primary-font);
+}
+
+/*
+============================
+Main div start
+============================
+*/
+
+/*
+============================
+navbar start
+============================
+*/
+
+.menu-btn {
+  display: none;
+}
+
+.close-btn {
+  display: none;
+}
+
+.side-bar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg2-color);
+}
+
+.side-bar > ul {
+  list-style-type: none;
+}
+
+.side-bar > ul > li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.side-bar > ul > li > a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-family: var(--secondry-font);
+  text-transform: uppercase;
+}
+
+.side-bar > ul > li > a:hover {
+  color: #ffe6ab;
+}
+
+.side-bar > ul > li > a.active {
+  color: var(--third-color);
+}
+
+/*
+============================
+navbar end
+============================
+*/
+
+/*
+============================
+form sectioin start
+============================
+*/
+
+.form-sec {
+  width: 85%;
+  height: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  background-color: var(--white-color);
+  border-radius: 50px;
+}
+
+.form-content > h1 {
+  font-size: 47px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.form-content > p {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.9rem;
+  font-size: 18px;
+}
+
+.form-flex {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--primary-font);
+  margin-top: 30px;
+}
+
+.form-div {
+  width: 100%;
+}
+
+.form-flex > .form-div > input {
+  width: 96%;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid black;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+::placeholder {
+  font-size: 16px;
+  color: rgb(164, 164, 164);
+  font-family: var(--primary-font);
+}
+
+
+.main-form > .message {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-form > .message > textarea {
+  width: 98%;
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 15px 0px 0px 10px;
+  margin-top: 5px
+}
+
+.main-form > .message > label {
+  font-family: var(--primary-font);
+}
+
+.main-form > .message {
+  margin-top: 15px;
+}
+
+.submit-btn {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.submit-btn > input[type = "submit"] {
+  border: none;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  padding: 17px 30px;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+}
+
+.submit-btn > input[type = "submit"]:hover {
+  background-color: var(--secondry-color);
+}
+
+/*
+============================
+form sectioin end
+============================
+*/
+
+/*
+============================
+keep-to-date section start
+============================
+*/
+
+.keep-to-date {
+  width: 100%;
+  height: 400px;
+  background-color: var(--third-color);
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keep-to-date-content {
+  width: 85%;
+  height: 270px;
+  margin: auto;
+  background-color: var(--white-color);
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.keep-to-date-content > h1 {
+  font-family: var(--secondry-font);
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.keep-to-date-content > p {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.input-element {
+  width: 100%;
+}
+
+.input-element > input[type = "text"] {
+  width: 37%;
+  margin-right: 20px;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid black;
+  padding-left: 10px;
+}
+
+::placeholder {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: rgb(177, 177, 177);
+}
+
+.input-element > input[type = "submit"] {
+  font-family: var(--primary-font);
+  border: none;
+  padding: 15px 32px;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  font-size: 16px;
+} 
+
+.input-element > input[type = "submit"]:hover {
+  background-color: var(--secondry-color);
+}
+/*
+============================
+keep-up-to-date section end
+============================
+*/
+
+
+/*
+============================
+our contact section start
+============================
+*/
+
+.our-contact-section {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 630px;
+  background-color: var(--white-color);
+  margin-top: 6%;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section {
+  width: 50%;
+  height: 100%;
+  margin-left: 3%;
+  margin-top: 10%;
+  overflow-y: hidden;
+}
+
+.left-section-discount {
+  width: 225px;
+  height: 225px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--secondry-font);
+}
+
+.left-section-discount > h2 {
+  font-size: 60px;
+}
+
+.left-section-discount > p {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.left-section-heading {
+  font-family: var(--secondry-font);
+  margin-top: 20px;
+  color: var(--text-color);
+  height: 100%;
+}
+
+.left-section-heading > h2 {
+  font-size: 60px;
+  line-height: 4.1rem;
+  overflow-y: hidden;
+  margin-bottom: 50px;
+}
+
+.left-section-heading > p {
+  margin-top: 50px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-family: var(--primary-font);
+}
+
+.left-section-heading > p > a::after {
+  content: "Freepik";
+  text-decoration: none;
+  color: #99e54d;
+}
+
+.left-section-heading > p > a {
+  text-decoration: none;
+}
+
+.left-section-heading > p > a:hover {
+  color: var(--secondry-color);
+}
+
+.left-section-heading > a {
+  text-decoration: none;
+  background-color: var(--third-color);
+  color: white;
+  padding: 19px 46px 20px;
+  border-radius: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.09rem;
+}
+
+.left-section-heading > a:hover {
+  background-color: #ffe6ab;
+  color: #111;
+}
+
+.right-section {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.email-add::after { 
+  content: "hi@ourcompany.com";
+  color: var(--third-color);
+  font-family: var(--primary-font);
+}
+
+.location1::after { 
+  content: "121 Rock Street, 21 Avenue,";
+  color: var(--text-color);
+  font-family: var(--primary-font);
+}
+
+.location2::after { 
+  content: "New York, NY 92103-9000";
+  color: var(--text-color);
+  font-family: var(--primary-font);
+}
+
+.phone::after { 
+  content: "+1(555) 000-000";
+  color: var(--third-color);
+  font-family: var(--primary-font);
+}
+
+.Right-sec-img {
+  color: var(--text-color);
+  display: flex;
+  margin-top: 40px;
+}
+
+.Right-sec-img > .bg-c > img {
+  width: 40px;
+}
+
+.bg-c {
+  width: 70px;
+  height: 70px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Right-sec-img > .right-sec-content > h3 {
+  font-family: var(--secondry-font);
+  margin-bottom: 30px;
+}
+
+.Right-sec-img > .right-sec-content >  p {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.right-sec-content {
+  margin-left: 40px;
+}
+
+/*
+============================
+our contact section end
+============================
+*/
+
+/*
+============================
+Main div end
+============================
+*/
+
+
+/*
+==================================
+||||||||||||||||||||||||||||||||||
+Main page resposive  
+||||||||||||||||||||||||||||||||||
+==================================
+*/
+
+
+@media only screen and (max-width: 991px) {
+
+  .menu-btn {
+    display: block;
+    background-color: #f9f6ee;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-btn > i {
+    font-size: 26px;
+  }
+
+  .menu-btn > i:hover {
+    color: #9e91e8;
+  }
+  
+  .close-btn {
+    display: block;
+    color: white;
+    width: 100%;
+    height: 75px;
+  }
+
+  .close-btn > i {
+  font-size: 30px;
+  color: wheat;
+  position: absolute;
+  right: 0px;
+  margin: 25px;
+  cursor: pointer;
+  display: block;
+  }
+
+  .menu-bar {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 0.3s ease;
+    transition-property: left;
+    z-index: 999;
+  }
+
+  .side-bar {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.7s ease;
+    transition-property: left;
+    display: block;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .side-bar > ul > li > a {
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: var(--primary-font);
+  }
+
+  .side-bar > ul > li > a:hover {
+    color: rgb(201, 201, 201);
+  }
+
+  .side-bar > ul > li > a.active {
+    color: white;
+  }
+
+  .side-bar > ul > li {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .side-bar.work {
+    left: 0;
+  }
+  
+  .menu-bar.work {
+    left: 0;
+  }
+ 
+}
+
+/*
+==============================
+Mobile size 
+==============================
+*/
+
+@media only screen and (max-width: 455px) {
+
+/*
+============================
+form sectioin start
+============================
+*/
+
+.form-sec {
+  width: 78%;
+  height: 760px;
+  margin-top: 60px;
+}
+
+.form-content > h1 {
+  font-size: 1.5rem;
+}
+
+.form-content > p {
+  width: 90%;
+  line-height: 2rem;
+}
+
+.form-flex {
+  flex-direction: column;
+  width: 99%;
+  margin-left: 10px;
+}
+
+.main-form > .message {
+  width: 96%;
+  margin-left: 10px;
+}
+
+.form-div {
+  margin-top: 15px;
+}
+
+.form-flex {
+  margin-top: 15px;
+}
+/*
+============================
+form sectioin end
+============================
+*/
+
+
+/*
+============================
+keep-to-date section start
+============================
+*/
+
+.keep-to-date {
+  height: 450px;
+}
+
+.keep-to-date-content {
+  width: 80%;
+  height: 330px;
+}
+
+.keep-to-date-content > h1 {
+  font-size: 1.5rem;
+}
+
+.keep-to-date-content > p {
+  line-height: 2rem;
+}
+
+.input-element {
+  width: 100%;
+}
+
+.input-element > input[type = "text"] {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.input-element > input[type = "submit"] {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+/*
+============================
+keep-up-to-date section end
+============================
+*/
+
+/*
+============================
+our contact section start
+============================
+*/
+
+.our-contact-section {
+  width: 78%;
+  margin-top: 60px;
+  flex-direction: column;
+  height: 1350px;
+}
+
+.left-section {
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 50px;
+  height: 700px;
+}
+
+.left-section-heading > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.left-section-heading > p {
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.right-section {
+  width: 100%;
+  margin-top: 0px;
+}
+
+.Right-sec-img {
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.Right-sec-img > .bg-c > img {
+  width: 40px;
+}
+
+.bg-c {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.right-sec-content {
+  margin-left: 10px;
+}
+
+/*
+============================
+our contact section end
+============================
+*/
+}
